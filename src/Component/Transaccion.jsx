@@ -18,7 +18,7 @@ class Transaccion extends Component {
             tipo:"",
             datos:[],
           }
-          this.tramite()=this.tramite.bind(this);
+      //    this.tramite()=this.tramite.bind(this);
         }
     tramite(){
 
