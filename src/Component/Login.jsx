@@ -4,7 +4,6 @@ import '../css/fonts.css';
 import '../css/login.css';
 import axios from 'axios';
 
-
 class Login extends Component{
 
     constructor(props) {
@@ -24,7 +23,7 @@ class Login extends Component{
         })
         event.preventDefault();
 
-        axios.get('https://pyrestdemo2.herokuapp.com/api/v1/login/',{
+        axios.get('http://142.93.241.28/api/v1/login/',{
             params:{
                 number:this.state.number,
                 passw:this.state.pass,

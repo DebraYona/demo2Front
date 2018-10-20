@@ -4,10 +4,8 @@ import '../css/fonts.css';
 import axios from 'axios';
 import Tabla from './Tabla'
 
-
-
 class Transaccion extends Component {
-  constructor(props){
+    constructor(props){
           super(props);
 
           this.state = {
