@@ -42,6 +42,7 @@ class Login extends Component{
                     }).then(response2=>{
                         console.log(response2.data)
                         sessionStorage.setItem('cuentas', JSON.stringify(response2.data));
+                        window.location.reload();
                     })
 
                 }

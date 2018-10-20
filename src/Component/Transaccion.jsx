@@ -56,7 +56,8 @@ class Transaccion extends Component {
 
                       })
                           .then(response=>{
-                                alert("transferencia ok")
+                              alert("transferencia ok")
+                              window.location.reload();
                           })
                           .catch(error =>{
                               console.log(error);
