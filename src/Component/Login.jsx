@@ -23,7 +23,7 @@ class Login extends Component{
         })
         event.preventDefault();
 
-        axios.get('https://pyrestdemo2.herokuapp.com//api/v1/login/',{
+        axios.get('http://demo022-ljlw.us-e2.cloudhub.io/api/v1/login/',{
             params:{
                 number:this.state.number,
                 passw:this.state.pass,
@@ -36,7 +36,7 @@ class Login extends Component{
                     alert("Usuario y contraseña incorrecta")
                 }else{
                     sessionStorage.setItem('user', JSON.stringify(response.data));
-                    axios.get('https://pyrestdemo2.herokuapp.com/api/v1/accountbyuserid/', {
+                    axios.get('http://demo022-ljlw.us-e2.cloudhub.io/api/v1/accountbyuserid/', {
                         params: { idusuario: response.data[0].idusuario }
                     }).then(response2=>{
                         console.log(response2.data)
