@@ -46,7 +46,7 @@ class Transaccion extends Component {
                   }else{
                       console.log(response.data[0].idcuenta)
 
-                      axios.post('https://pyrestdemo2.herokuapp.com/api/v1/transnew/',{
+                      axios.post('http://demo022-ljlw.us-e2.cloudhub.io/api/v1/transnew/',{
                               cuenta_receptor: this.state.receptor,
                               cuenta_remitente: 1,
                               monto: this.state.monto,
