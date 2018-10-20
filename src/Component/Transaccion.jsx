@@ -34,7 +34,7 @@ class Transaccion extends Component {
       } else  if(this.state.monto == "" || this.state.monto <= 0 || !(!isNaN(parseFloat(this.state.monto)) && isFinite(this.state.monto))){
           alert("monto correcto")
       }else{
-          axios.get('https://pyrestdemo2.herokuapp.com/api/v1/accountbynumber/',{
+          axios.get('http://demo022-ljlw.us-e2.cloudhub.io/api/v1/accountbynumber/',{
               params:{
                   numero:this.state.receptor,
               }

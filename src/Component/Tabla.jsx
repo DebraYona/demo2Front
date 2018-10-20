@@ -12,7 +12,7 @@ class Tabla extends Component{
     }
 
     componentDidMount() {
-        axios.get('https://pyrestdemo2.herokuapp.com/api/v1/transbycliente/',{
+        axios.get('http://demo022-ljlw.us-e2.cloudhub.io/api/v1/transbycliente/',{
             params:{
                 cuenta : 1,
                 /*remitente:this.state.remitente,

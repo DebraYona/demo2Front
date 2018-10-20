@@ -30,7 +30,7 @@ class Info extends Component {
   //  var data = sessionStorage.getItem('numeroCuenta');
 
     let value='74119091'
-    axios.get('http://localhost:3000/api2/cuenta/'+value
+    axios.get('http://demo022-ljlw.us-e2.cloudhub.io/api2/cuenta/'+value
     ).then(res=>{
       this.setState({datos:res.data})
       console.log(res.data);
